@@ -1,0 +1,23 @@
+h1 {
+  color: turquoise;
+}
+h2{color:rgb(255,0,0);
+  }
+
+p{
+  front-size:5px;
+  front-style:italic;
+  front-weight:bold;
+  border: 5px dotted #0033d2;
+  border-bottom-color: purple;
+  letter-spacing:2px;
+}
+
+#first{
+  border-color:green;
+  line-height: 29px;
+
+}
+
+.highlight{background-color: pink;
+}
