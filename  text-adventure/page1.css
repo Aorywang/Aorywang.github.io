@@ -3,6 +3,7 @@ h1 {
   font-size:40px;
 }
 
+
 h2{color:rgb(100,0,0);
     font-size:30px;}
 
@@ -29,6 +30,7 @@ font-style:Helvetica;
 border: 2px dotted #0033d2;
 border-color: Darkred;
 letter-spacing:3px;}
+
 
 .highlight{background-color: lightblue;
 }
