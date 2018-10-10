@@ -1,0 +1,123 @@
+<html xmlns="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aorywang</title>
+</head>
+<link  href="css/style.css" rel="stylesheet" type="text/css">
+
+
+<body>
+<div class="header">
+	<div class="headerCenter">
+
+        <ul class="nav">
+				<li  id="chose"><a href="home.html">HOME</a></li>
+					<li><a href="Photography.html">Collaboration</a></li>
+					<li><a href="Film.html">Photography</a></li>
+					<li><a href="Graphic Project.html">Film Works</a></li>
+					<li><a href="Creative Compuiting.html">Creative Compuiting</a></li>
+					<li><a href="Artist Info.html">Artist Info</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news_css_8"></div>
+<div class="news_css_0">
+	<div class="news_css_2"></div>
+	<div class="news_css_5">
+		<h1 class="news_css_6"><strong>AORY WANG</strong></h1>
+			<p>PHOTOGRAPHER/FILM MAKER<br />
+				<p>BASED ON NEW YORK AND BEIJING<br />
+
+					<div class="artists_css_0">RECENT WORKS
+
+<div class="home_css_0">
+	<img src="images/1.jpg" class="home_css_1" id="imgchange" />
+    <div class="home_css_2"></div>
+    <div class="home_css_3">
+    	<div class="home_css_4">
+        	<div class="img_chose" onclick="changgeimg_ck(1)"></div>
+        	<div class="img_chose" onclick="changgeimg_ck(2)"></div>
+        	<div class="img_chose" onclick="changgeimg_ck(3)"></div>
+        	<div class="img_chose" onclick="changgeimg_ck(4)"></div>
+        </div>
+    </div>
+<script>
+var imgurl = new Array();
+imgurl[0] = "images/1.jpg";
+imgurl[1] = "images/2.jpg";
+imgurl[2] = "images/3.jpg";
+imgurl[3] = "images/4.jpg";
+imgurl[4] = "images/5.jpg";
+function changgeimg_ck(img_num){
+	document.getElementById('imgchange').src=imgurl[img_num-1];
+	for(var i = 1; i<=document.getElementsByClassName("img_chose").length;i ++){
+		if(i==img_num){
+			document.getElementsByClassName("img_chose").item(i-1).style.backgroundColor="#000";
+
+		}else{
+			document.getElementsByClassName("img_chose").item(i-1).style.backgroundColor="#fff";
+		}
+	}
+}
+changgeimg_ck(1);
+</script>
+    <div class="home_css_2"></div>
+
+  <div class="home_css_5"><div class="home_css_6"><strong>01</strong></div></div>
+    <div class="home_css_2"></div>
+
+  <div class="home_css_7">
+    	<img src="images/11.jpg"  class="home_css_8" height="145" width="113" />
+        <p class="home_css_9">Portraits &nbsp;&nbsp;&nbsp;&nbsp;<span class="home_css_10"><strong></strong></span></p>
+    </div>
+    <div class="home_css_2"></div>
+
+    <div class="home_css_5"><div class="home_css_6"><strong>02</strong></div></div>
+    <div class="home_css_2"></div>
+    <div class="home_css_11">
+    	<img src="images/R4.jpg"  class="home_css_8" height="180" width="180"/>
+        <p class="home_css_12">Films<span class="home_css_10"><strong></strong></span></p>
+  </div>
+    <div class="home_css_2"></div>
+
+    <div class="home_css_5"><div class="home_css_6"><strong>03</strong></div></div>
+    <div class="home_css_2"></div>
+    <div class="home_css_11">
+    	<img src="images/13.jpg"  class="home_css_13" height="200" width="220" />
+
+      <p class="home_css_15">Collaboration project</p>
+  </div>
+    <div class="home_css_2"></div>
+    <div class="home_css_5"><div class="home_css_6"><strong>04</strong></div></div>
+    <div class="home_css_2"></div>
+    <div class="home_css_16">
+    	<img src="images/14.jpg"  class="home_css_17" height="150" width="150"/>
+      <p class="home_css_18">Lighting Art</p>
+
+  </div>
+    <div class="home_css_2"></div>
+    <div class="home_css_5"><div class="home_css_6"><strong>05</strong></div></div>
+    <div class="home_css_2"></div>
+    <div class="home_css_16">
+      <p class="home_css_20">
+      	<strong class="home_css_21"></strong><br/>
+        Photo Journal<br/>
+		<img src="images/15.jpg" height="140" width="200"/>
+      </p>
+  </div>
+    <div class="home_css_2"></div>
+    <div class="home_css_5">
+      <div class="home_css_6"><strong>06</strong></div></div>
+    <div class="home_css_2"></div>
+</div>
+
+<div class="footer">
+&copy;Aorywang
+
+</div><audio src="1.mp3" controls="controls" loop="loop" autoplay="autoplay" hidden="hidden">
+<embed src="1.mp3"/>
+<bgsound src="1.mp3"/>
+</audio>
+</body>
+</html>
