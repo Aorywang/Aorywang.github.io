@@ -1,0 +1,95 @@
+<html xmlns="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aorywang</title>
+</head>
+<link  href="css/style.css" rel="stylesheet" type="text/css">
+
+
+<body>
+<div class="header">
+	<div class="headerCenter">
+
+        <ul class="nav">
+					<li><a href="home.html">HOME</a></li>
+						<li  id="chose"><a href="Photography.html">Collaboration</a></li>
+						<li><a href="Film.html">Photography</a></li>
+						<li><a href="Graphic Project.html">Film Works</a></li>
+						<li><a href="Creative Compuiting.html">Creative Compuiting</a></li>
+						<li><a href="Artist Info.html">Artist Info</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news_css_0">
+	<img src="images/1.jpg" class="news_css_1" id="imgchange" />
+    <div class="news_css_2"></div>
+    <div class="news_css_3">
+    	<div class="news_css_4">
+        	<div class="img_chose" onclick="changgeimg_ck(1)"></div>
+        	<div class="img_chose" onclick="changgeimg_ck(2)"></div>
+        	<div class="img_chose" onclick="changgeimg_ck(3)"></div>
+        	<div class="img_chose" onclick="changgeimg_ck(4)"></div>
+					<div class="img_chose" onclick="changgeimg_ck(5)"></div>
+					<div class="img_chose" onclick="changgeimg_ck(6)"></div>
+					<div class="img_chose" onclick="changgeimg_ck(7)"></div>
+
+        </div>
+    </div>
+<script>
+var imgurl = new Array();
+imgurl[0] = "images/L4.jpg";
+imgurl[1] = "images/L5.jpg";
+imgurl[2] = "images/L3.jpg";
+imgurl[3] = "images/L7.jpg";
+imgurl[4] = "images/13.jpg";
+imgurl[5] = "images/L6.jpg";
+imgurl[6] = "images/L2.jpg";
+imgurl[7] = "images/4.jpg";
+imgurl[8] = "images/2.jpg";
+function changgeimg_ck(img_num){
+	document.getElementById('imgchange').src=imgurl[img_num-1];
+	for(var i = 1; i<=document.getElementsByClassName("img_chose").length;i ++){
+		if(i==img_num){
+			document.getElementsByClassName("img_chose").item(i-1).style.backgroundColor="#000";
+
+		}else{
+			document.getElementsByClassName("img_chose").item(i-1).style.backgroundColor="#fff";
+		}
+	}
+}
+changgeimg_ck(1);
+</script>
+  <div class="news_css_2"></div>
+
+  <div class="news_css_5">
+	    	<p class="news_css_6"><strong>FOR GENEROUS HUMAN SS18</strong></p>
+        <p>2018/08/12<br /></p>
+  </div>
+
+	<div class="shows_css_0">
+		<img src="images/W4.jpg" class="shows_css_1" id="imgchange" />
+		<div class="shows_css_2"></div>
+
+				<div class="shows_css_0">
+					<img src="images/OK.JPG" class="shows_css_1" id="imgchange" />
+					<div class="shows_css_2"></div>
+
+					<div class="news_css_5">
+					    	<p class="news_css_6"><strong>FOR LUZY/ ALBUM COVER
+</strong></p>
+				        <p>2018/01/23<br /></p>
+				  </div>
+					<div class="shows_css_0">
+						<img src="images/H4.JPG" class="shows_css_1" id="imgchange" />
+						<div class="shows_css_2"></div>
+
+
+						<div class="footer">
+						&copy;Aorywang
+</div><audio src="1.mp3" controls="controls" loop="loop" autoplay="autoplay" hidden="hidden">
+<embed src="1.mp3"/>
+<bgsound src="1.mp3"/>
+</audio>
+</body>
+</html>
