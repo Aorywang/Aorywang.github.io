@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AORY WANG
+</title>
+<p style="font-family:sans-serif;
+font-size:500%;
+color:white;
+padding:30px 0px 0px 900px;
+border:#000 solid 1px;
+height:0px;
+width:0px;">
+LET'S FILL THE COLOR IN!
+</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        canvas {
+            cursor: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="900"></canvas>
+    <body style="background-color:black;">
+</body>
+
+
+
+
+<script src="./js/main.js"></script>
+<script>
+    // function createRandomShape(game) {
+    //     let x = 50 + parseInt(Math.random() * (game.width-100))
+    //     let y = 50 + parseInt(Math.random() * (game.height-100))
+    //     let w = parseInt(Math.random() * 50 + 20)
+    //     let h = parseInt(Math.random() * 50 + 20)
+    //     let deg = Math.random() * 2 * Math.PI
+    //     const randType = [
+    //         () => new Rect(x, y, deg, w, w),
+    //         () => new Strip(x, y, deg, w),
+    //         () => new Triangle(x, y, deg, w, h),
+    //         () => new Circle(x, y, w/2),
+    //         () => new Wave(x, y, deg, 50, 30)
+    //     ]
+
+    //     return randType[parseInt(Math.random() * randType.length)]()
+    // }
+    // for (let i = 1; i < 30;) {
+    //     let shape = createRandomShape(game)
+    //     if (game.collisions(shape) == false) {
+    //         game.addChild(shape)
+    //         i++
+    //     }
+    // }
+
+    function deg(jd) {
+        const deg = Math.PI / 180
+        return deg * jd
+    }
+
+    let game = new Game("canvas")
+
+
+    game.addChild(new Triangle(50, -160, deg(200), 150, 250))
+    game.addChild(new Circle(240, 100, 50))
+    game.addChild(new Triangle(400, 100, deg(50), 10, 10))
+    game.addChild(new Circle(500, 120, 5))
+
+    game.addChild(new Rect(560, 60, deg(-20), 15, 200))
+    game.addChild(new Wave(600, 100, deg(90), 100, 30))
+
+    game.addChild(new Rect(780, 20, deg(50), 15, 100))
+    game.addChild(new Rect(100, 100, deg(-20), 15, 200))
+
+    game.addChild(new Wave(200, 170, deg(-20), 50, 30))
+    game.addChild(new Rect(300, 200, deg(20), 15, 100))
+
+    game.addChild(new Wave(400, 300, deg(20),80, 30))
+    game.addChild(new Rect(500, 200, deg(-100), 10, 40))
+
+    game.addChild(new Rect(600, 360, deg(-4), 30, 30))
+    game.addChild(new Circle(640, 300, 20))
+    game.addChild(new Triangle(640, 400, deg(45), 40, 40))
+
+    game.addChild(new Rect(50, 500, deg(-20), 30, 10))
+    game.addChild(new Wave(120, 500, deg(90), 50, 30))
+
+    game.addChild(new Triangle(200, 470, deg(225), 120, 120))
+    game.addChild(new Circle(460, 550, 60))
+
+    game.addChild(new Rect(240, 360, deg(0), 40, 40))
+    game.addChild(new Circle(50, 420, 20))
+
+    game.update()
+
+</script>
+
+
+
+</html>
