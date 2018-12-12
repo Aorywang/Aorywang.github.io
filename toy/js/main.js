@@ -31,6 +31,8 @@ class Game {
         window.addEventListener('mousedown', event => {
             Input.mouseDown = true
         })
+
+
         window.addEventListener('mousemove', event => {
             Input.mouseTargetX = event.clientX
             Input.mouseTargetY = event.clientY
@@ -175,7 +177,7 @@ class Shape {
 }
 
 Shape.Steps = [-1,-1,-1,-1,1,1,1,1]
-Shape.colors = ['#FF6666', '#10C8CD', '#FA6121', '#7DC24B', '#663366', '#FFCC66', '#666636',]
+Shape.colors = ['#FF6666', '#10C8CD', '#FA6121', '#7DC24B', '#663366', '#FFCC66', '#666666',]
 //正方形
 class Rect extends Shape{
     draw_img(p) {
