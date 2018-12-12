@@ -31,8 +31,6 @@ class Game {
         window.addEventListener('mousedown', event => {
             Input.mouseDown = true
         })
-
-
         window.addEventListener('mousemove', event => {
             Input.mouseTargetX = event.clientX
             Input.mouseTargetY = event.clientY
